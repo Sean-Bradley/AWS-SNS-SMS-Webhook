@@ -27,7 +27,7 @@ Key | Value
 -- | --
 Name | SMS
 Type | webhook
-Url  | http://127.0.0.1:5000/sendsms?number=**your telephone number**
+Url  | http://127.0.0.1:5000/sendsms?number=**your-telephone-number**
 Http Method | POST
 
 > :warning: In the above table, the telephone number added to the URL should be in E.164 format but without the + symbol. 
