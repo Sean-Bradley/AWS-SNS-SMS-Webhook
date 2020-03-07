@@ -6,7 +6,9 @@ This script was created for my Grafana tutorials at https://sbcode.net/grafana/s
 
 It uses Flask and Boto3
 
-You will need to create a IAM use in AWS, and copy it's access key and secret to the `sendsms.py` script
+You will need to create a IAM user in AWS, and copy it's access key and secret to the `sendsms.py` script
+
+Install and run this script on your Grafana server.
 
 Ubuntu 18.04
 ```bash
@@ -32,7 +34,7 @@ Select **Alerting**-->**Notification Channels** and add a **New Channel**
 
 Key | Value
 -- | --
-Name | Send SMS
+Name | SMS
 Type | webhook
 Url  | http://127.0.0.1:5000/sendsms?number=**your telephone number**
 Http Method | POST
